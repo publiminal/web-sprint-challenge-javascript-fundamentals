@@ -26,13 +26,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
-2. Explain the difference between a callback and a higher order function.
+    map : return a new array after applying a custom function to each array's element. Useful for immutable updates on data. 
+
+    reduce : return a new array after applying a conditional to each array's element. Clearly useful to filter data without mutability as well.
+
+    reduce : a shorthand for apply operations to an array and return a single Value. Useful when doing arithmetic computational tasks. 
 
 3. Explain what a closure is.
 
+    A closure is wrapper technique for visibility and organization in code. 
+    When nesting functions, a scope chain is created. The inner function context has access to its parent context as Well. 
+ 
 4. Describe the four principles of the 'this' keyword.
 
+    1. Global : when the global/window is referenced.
+    2. Implicit : when used with the dot operator referring `this` to the object on the left of the operator. (obj.prop)
+    3. Explicit : when tying two separate objects together, calling a method from one object while accessing the properties from the other. (.call)
+    4. New : when creating objects with a constructor function. this will be tied to the returned object instance itself.
+
 5. Why do we need super() in an extended class?
+
+    To initialize all props from the extended class properly.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
